@@ -114,9 +114,7 @@ CELERY_RESULT_SERIALIZER = "json"
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 60 * 15  # 15 min hard limit per CI-fix pipeline run
 
-# --------------------------------------------------------------------------
 # Nebius Token Factory (Sandboxes + Nemotron Model API)
-# --------------------------------------------------------------------------
 # NEBIUS_API_KEY authenticates against BOTH the OpenAI-compatible model
 # endpoint and the Sandboxes REST API on Nebius Token Factory.
 NEBIUS_API_KEY = os.environ.get("NEBIUS_API_KEY", "")
