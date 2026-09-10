@@ -15,8 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # --------------------------------------------------------------------------
 SECRET_KEY =  "dev-only-insecure-secret-key-change-me"
 DEBUG = os.environ.get("DJANGO_DEBUG", "true").lower() == "true"
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(",")
-
+ALLOWED_HOSTS =['*']
 # --------------------------------------------------------------------------
 # Applications
 # --------------------------------------------------------------------------
